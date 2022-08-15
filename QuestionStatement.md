@@ -1,10 +1,10 @@
-# Parking At The OAT
+# OAT Parking Trauma
 
 ## Problem Statement
 
 Josh has a party planned with his friends at the OAT tonight. However, he leaves for party 10 minutes late. In order to compensate for his tardiness, he decides to get to the OAT on a stolen motorcycle. Sadly as he reaches the OAT, he realises that almost everyone had the same plan of partying at the OAT tonight and thus, the parking area is packed and he cannot park his bike anywhere. Josh is, however, a man of determination and decides that under no circumstances will he park somewhere far away from the OAT. Therefore, he decides to do a few illegal moves to reduce his walking effort. As his motorcycle takes more parking space than a bicycle, he decides to remove some cycles from their spots and throw them onto the road. Being a man of laziness as well, he wants to remove the minimum number of cycles required such that his motorcyle can exactly fit in a spot. To do the following, Josh makes the following assumptions:
 
-He decides to model the OAT Parking Area as N x H matrix A where each block represents a parking spot which exactly fits for a bicycle. The bicycles are always parked from bottom to top. Formally speaking, an entity can only occupy A[i][j] if and only if there is a entity on A[i][j-1] (call it, the "Gravity Condition"). Thus, our parking area ends up looking similar to a histogram as shown below (for N=4 and H=8):
+He decides to model the OAT Parking Area as $N x H$ matrix $A$ where each block represents a parking spot which exactly fits for a bicycle. The bicycles are always parked from bottom to top. Formally speaking, an entity can only occupy $A[i][j]$ if and only if there is a entity on $A[i][j-1]$ (call it, the "Gravity Condition"). Thus, our parking area ends up looking similar to a histogram as shown below (for N=4 and H=8):
 
    ![Screenshot 2022-08-15 at 1 37 34 PM](https://user-images.githubusercontent.com/97837018/184599456-bdda91b9-5eab-4a57-863a-ea0e39233172.png)
 
@@ -21,11 +21,11 @@ In the above picture, we convert the yellow cells to black requiring 6 units of 
 
 ## Input
 
-The first line contains one integer 𝑡 (1 ≤ 𝑡 ≤ 5000) — the number of test cases.
+The first line contains one integer 𝑡 ($1 ≤ 𝑡 ≤ 100$) — the number of test cases.
 
-The first line of each test case consists of 3 integers : N, H and K (1 ≤ N ≤ 100, 1 ≤ H ≤ 100, 1 ≤ K ≤ N) i.e the length of the parking spot, maximum height of the parking spot and the length of Josh's motorbike.
+The first line of each test case consists of 3 integers : N, H and K ( $1 ≤ N ≤ 100$ , $1 ≤ H ≤ 100$ , $1 ≤ K ≤ N$ ) i.e the length of the parking spot, maximum height of the parking spot and the length of Josh's motorbike.
 
-The second line consists of N integers h<sub>1</sub>, h<sub>2</sub>, ....., h<sub>N</sub> - the number of bicycles parked on the i<sup>th</sup> column, where 1 ≤ h<sub>i</sub> ≤ H for all 1 ≤ i ≤ N
+The second line consists of N integers h<sub>1</sub>, h<sub>2</sub>, ....., h<sub>N</sub> - the number of bicycles parked on the i<sup>th</sup> column, where 1 ≤ h<sub>i</sub> ≤ H for all $1 ≤ i ≤ N$
 
 ## Output
 
