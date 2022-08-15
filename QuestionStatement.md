@@ -8,7 +8,7 @@ He decides to model the OAT Parking Area as $N x H$ matrix $A$ where each block 
 
    ![Screenshot 2022-08-15 at 1 37 34 PM](https://user-images.githubusercontent.com/97837018/184599456-bdda91b9-5eab-4a57-863a-ea0e39233172.png)
 
-Here, the red spots indicate taken parking spots while the black ones indicate free areas. Josh's motorbike is a 1 x K ( $K ≤ N$ ) entity that needs to be parked in a horizontal fashion such that the Gravity condition is satisfied on all cells where it is parked (i.e a bicycle is parked below every cell. Removing any bicycle from the top of any column (aka convert a red square to black) takes 1 unit of time, and Josh needs to get to the party as soon as possible.
+Here, the red spots indicate taken parking spots while the black ones indicate free areas. Josh's motorbike is a $1$ x $K$ ( $K ≤ N$ ) entity that needs to be parked in a horizontal fashion such that the Gravity condition is satisfied on all cells where it is parked (i.e a bicycle is parked below every cell. Removing any bicycle from the top of any column (aka convert a red square to black) takes 1 unit of time, and Josh needs to get to the party as soon as possible.
 
 Help Josh remove the minimum number of bicycles such that his motorbike can be parked. For example, if K=3 for the example given above: the optimum way to park the motorbike would be level the first three columns requiring a minimum of 2+4 = 6 units of time. 
 
