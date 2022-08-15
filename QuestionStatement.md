@@ -2,13 +2,13 @@
 
 ## Problem Statement
 
-Josh has a party planned with his friends at the OAT tonight. However, he leaves for party 10 minutes late. In order to compensate for his tardiness, he decides to get to the OAT on a stolen motorcycle. Sadly as he reaches the OAT, he realises that almost everyone had the same plan of partying at the OAT tonight and thus, the parking area is packed and he cannot park his bike anywhere. Josh is, however, a man of determination and decides that under no circumstances will he park somewhere far away from the OAT. Therefore, he decides to do a few illegal moves to reduce his walking effort. As his motorcycle takes more parking space than a bicycle, he decides to remove some cycles from their spots and throw them onto the road. Being a man of laziness as well, he wants to remove the minimum number of cycles required such that his motorcyle can exactly fit in a spot. To do the following, Josh makes the following assumptions:
+Josh has a party planned with his friends at the OAT tonight. However, he leaves for party 10 minutes late. In order to compensate for his tardiness, he decides to get to the OAT on a stolen motorcycle. Sadly as he reaches the OAT, he realises that almost everyone had the same plan of partying at the OAT tonight and thus, the parking area is packed and he cannot park his bike anywhere. Josh is, however, a man of determination and decides that under no circumstances will he park somewhere far away from the OAT. Therefore, he decides to do a few illegal moves to reduce his walking effort. As his motorcycle takes more parking space than a bicycle, he decides to remove some cycles from their spots and throw them onto the road. Being lazy as well, he wants to remove the minimum number of cycles required such that his motorcyle can exactly fit in a spot. To do the following, Josh makes the following assumptions:
 
 He decides to model the OAT Parking Area as $N x H$ matrix $A$ where each block represents a parking spot which exactly fits for a bicycle. The bicycles are always parked from bottom to top. Formally speaking, an entity can only occupy $A[i][j]$ if and only if there is a entity on $A[i][j-1]$ (call it, the "Gravity Condition"). Thus, our parking area ends up looking similar to a histogram as shown below (for N=4 and H=8):
 
    ![Screenshot 2022-08-15 at 1 37 34 PM](https://user-images.githubusercontent.com/97837018/184599456-bdda91b9-5eab-4a57-863a-ea0e39233172.png)
 
-Here, the red spots indicate taken parking spots while the black ones indicate free areas. Josh's motorbike is a 1 x K (K ≤ N) entity that needs to be parked in a horizontal fashion such that the Gravity condition is satisfied on all cells where it is parked (i.e a bicycle is parked below every cell. Removing any bicycle from the top of any column (aka convert a red square to black) takes 1 unit of time, and Josh needs to get to the party as soon as possible.
+Here, the red spots indicate taken parking spots while the black ones indicate free areas. Josh's motorbike is a 1 x K ( $K ≤ N$ ) entity that needs to be parked in a horizontal fashion such that the Gravity condition is satisfied on all cells where it is parked (i.e a bicycle is parked below every cell. Removing any bicycle from the top of any column (aka convert a red square to black) takes 1 unit of time, and Josh needs to get to the party as soon as possible.
 
 Help Josh remove the minimum number of bicycles such that his motorbike can be parked. For example, if K=3 for the example given above: the optimum way to park the motorbike would be level the first three columns requiring a minimum of 2+4 = 6 units of time. 
 
@@ -21,9 +21,9 @@ In the above picture, we convert the yellow cells to black requiring 6 units of 
 
 ## Input
 
-The first line contains one integer 𝑡 ($1 ≤ 𝑡 ≤ 100$) — the number of test cases.
+The first line contains one integer 𝑡 ( $1 ≤ 𝑡 ≤ 100$ ) — the number of test cases.
 
-The first line of each test case consists of 3 integers : N, H and K ( $1 ≤ N ≤ 100$ , $1 ≤ H ≤ 100$ , $1 ≤ K ≤ N$ ) i.e the length of the parking spot, maximum height of the parking spot and the length of Josh's motorbike.
+The first line of each test case consists of 3 integers : N, H and K ( $1 ≤ N ≤ 10^6$ , $1 ≤ H ≤ 10^6$ , $1 ≤ K ≤ N$ ) i.e the length of the parking spot, maximum height of the parking spot and the length of Josh's motorbike.
 
 The second line consists of N integers h<sub>1</sub>, h<sub>2</sub>, ....., h<sub>N</sub> - the number of bicycles parked on the i<sup>th</sup> column, where 1 ≤ h<sub>i</sub> ≤ H for all $1 ≤ i ≤ N$
 
