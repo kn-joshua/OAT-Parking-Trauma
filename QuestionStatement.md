@@ -23,7 +23,7 @@ In the above picture, we convert the yellow cells to black requiring 6 units of 
 
 The first line contains one integer 𝑡 ( $1 ≤ 𝑡 ≤ 100$ ) — the number of test cases.
 
-The first line of each test case consists of 3 integers : N, H and K ( $1 ≤ N ≤ 10^3$ , $1 ≤ H ≤ 10^3$ , $1 ≤ K ≤ N$ ) i.e the length of the parking spot, maximum height of the parking spot and the length of Josh's motorbike.
+The first line of each test case consists of 3 integers : N, H and K ( $1 ≤ N ≤ 100$ , $1 ≤ H ≤ 100$ , $1 ≤ K ≤ N$ ) i.e the length of the parking spot, maximum height of the parking spot and the length of Josh's motorbike.
 
 The second line consists of N integers h<sub>1</sub>, h<sub>2</sub>, ....., h<sub>N</sub> - the number of bicycles parked on the i<sup>th</sup> column, where 1 ≤ h<sub>i</sub> ≤ H for all $1 ≤ i ≤ N$
 
