@@ -36,7 +36,7 @@ For each test case print your answer on a separate line — a single integer X d
 #### Input
 3
 
-4 8 2
+4 8 3
 
 4 6 2 8
 
