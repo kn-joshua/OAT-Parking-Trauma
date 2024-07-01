@@ -1,3 +1,8 @@
 # OAT-Parking-Trauma
 
-An original Competitive Coding question made by K.N Joshua aka me, a student of IIT Kanpur modelling the cycle parking scenario in one of the campus' most famous hangout spots: the OAT.
+An original Competitive Coding question modelling a parking lot for a hangout spot
+Files included:
+  1. Problem Statement
+  2. Golden Solution
+  3. Editorial
+  4. Test Case Generator
